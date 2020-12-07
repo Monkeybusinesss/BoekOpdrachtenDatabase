@@ -64,8 +64,6 @@ SELECT * FROM album
         LIKE "%Girl%";
 
 
-
-
 -- New Databse 
 CREATE DATABASE Schiphol;
 USE Schiphol;

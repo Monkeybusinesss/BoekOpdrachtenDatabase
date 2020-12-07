@@ -33,7 +33,7 @@ INSERT INTO album(titel, artiest, genre, prijs, voorraad)
         ("Mi Sangre", "Juanes", "Latin", 3.90, 123),
         ("Greatest Hits 2", "Queen", "ROck", 3.45, 0),
         ("3121", "Prince", "Rock", 3.45, 0),
-        ("Antologia I", "Paco de Lucia", "World", 3.00, 320);\
+        ("Antologia I", "Paco de Lucia", "World", 3.00, 320);
 
 -- Table
 CREATE TABLE klant(

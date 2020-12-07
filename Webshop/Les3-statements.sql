@@ -84,4 +84,4 @@ SELECT album.artiest, album.titel, max(item.aantal)
     FROM album 
         INNER JOIN item ON item.aantal = 1;
 
--- opgave 36
+
