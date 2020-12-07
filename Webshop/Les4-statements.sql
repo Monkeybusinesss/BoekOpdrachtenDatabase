@@ -101,8 +101,21 @@ ALTER TABLE student
     CHANGE COLUMN woonplaats stad VARCHAR(30);
 
 -- opgave 56
--- Primary key was al gedefineerd naar ID toen we de table hadden gemaakt in het begin!!
-ALTER TABLE student 
-    ADD PRIMARY KEY(email);
+ALTER TABLE student MODIFY COLUMN ID INT;
+ALTER TABLE student DROP PRIMARY KEY;
+ALTER TABLE student ADD PRIMARY KEY(email);
 
--- vaardigheid 3.8 
+-- opgave 57
+ALTER TABLE student DROP PRIMARY KEY;
+ALTER TABLE student ADD PRIMARY KEY(ID);
+ALTER TABLE student MODIFY COLUMN ID INT NOT NULL AUTO_INCREMENT;
+
+-- opgave 3.8 vaardigheid
+-- hij stond er al op. heb het eerst even weggehaald!!
+ALTER TABLE postcode MODIFY COLUMN ID INT;
+ALTER TABLE postcode DROP PRIMARY KEY;
+-- nu de opdracht maken
+ALTER TABLE postcode ADD PRIMARY KEY(ID);
+ALTER TABLE postcode MODIFY COLUMN ID INT NOT NULL AUTO_INCREMENT;
+--  opgav vaardigheid 3.8 stap 3 klopt niet er is geen tabel klachten.
+
